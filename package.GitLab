@@ -1,10 +1,10 @@
 {
-  "name": "@houseamselem/template-react-component-library",
-  "repository": "https://github.com/houseamselem/template-react-component-library.git",
+  "name": "@cirrus/template-react-component-library",
+  "repository": "http://172.18.17.20/cirrus/template-react-component-library.git",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/houseamselem"
+    "registry": "http://172.18.17.20/cirrus"
   },
-  "version": "0.1.8",
+  "version": "0.1.4",
   "description": "A simple template for a custom React component library.",
   "scripts": {
     "rollup": "rollup -c",

@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.74-alpha">
+  <PropertyGroup>
+    <StartupCommand>set BROWSER=none&amp;&amp;npm start</StartupCommand>
+    <JavaScriptTestRoot>src\</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
+    <!-- Command to run on project build -->
+    <BuildCommand>
+    </BuildCommand>
+    <!-- Command to create an optimized build of the project that's ready for publishing -->
+    <ProductionBuildCommand>npm run build</ProductionBuildCommand>
+    <!-- Folder where production build objects will be placed -->
+    <BuildOutputFolder>$(MSBuildProjectDirectory)\build</BuildOutputFolder>
+  </PropertyGroup>
+  <ItemGroup>
+    <TypeScriptConfiguration Remove="src-template\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src-template\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src-template\index.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src-template\components\Label\Label.tsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src-template\components\Label\Label.test.tsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src-template\components\Label\Label.stories.tsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src-template\components\Label\Label.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src-template\components\Label\index.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src-template\components\index.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src-template\components\Button\index.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src-template\components\Button\Button.test.tsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src-template\components\Button\Button.stories.tsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src-template\components\Button\Button.css" />
+  </ItemGroup>
+</Project>

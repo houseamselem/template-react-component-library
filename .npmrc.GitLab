@@ -1,0 +1,2 @@
+@scope:registry=http://172.18.17.20/api/v4/projects/template-react-component-library/packages/npm/
+//172.18.17.20/api/v4/projects/template-react-component-library/packages/npm/:_authToken="${NPM_TOKEN}"
